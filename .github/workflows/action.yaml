@@ -1,5 +1,5 @@
 name: client_server
-rum-name: ${{ github.actor }} exo OS 
+run-name: ${{ github.actor }} exo OS 
 on: [push]
 jobs:
 	check-bats-version:
