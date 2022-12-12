@@ -1,0 +1,11 @@
+name: exoC-acts
+run-name: ${{ github.actor }} exercice OS
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: gcc client.c -o client
+      - run: gcc server.c -o server
+      # - run: bats -v
